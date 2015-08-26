@@ -2,10 +2,20 @@ package intuitio.kickstart.jersey.domain;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 @JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
+@Entity
+@Table(name = "task")
 public class Task {
-    
+
+    @Id
     private Long id;
+
+    @Column(name = "name")
     private String name;
 
     public Task() {
