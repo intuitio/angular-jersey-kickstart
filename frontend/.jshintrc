@@ -1,0 +1,17 @@
+{
+  "curly": true,
+  "eqnull": true,
+  "eqeqeq": true,
+  "undef": true,
+  "forin": true,
+  "futurehostile": true,
+  "latedef": true,
+  "quotmark": "single",
+  "unused": true,
+  "eqnull": true,
+  "globals": {
+    "angular": true,
+    "console": true,
+    "window": true
+  }
+}

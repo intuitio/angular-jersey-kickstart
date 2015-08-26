@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-strict-di>
+<head>
+    <title></title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- build:vendorjs ./js/polyfills.js -->
+    <!-- endbuild -->
+
+    <!-- build:vendorjs ./js/vendor.js -->
+    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./bower_components/angular/angular.min.js"></script>
+    <script src="./bower_components/angular-route/angular-route.min.js"></script>
+    <script src="./bower_components/angular-resource/angular-resource.min.js"></script>
+    <script src="./bower_components/angular-cookies/angular-cookies.min.js"></script>
+    <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./bower_components/angular-ui-bootstrap-bower/ui-bootstrap-tpls.min.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js ./js/app.js -->
+    <script src="./app.js"></script>
+    <script src="./constants.js"></script>
+    <script src="./config.js"></script>
+    <script src="./routes.js"></script>
+
+    <script src="./shared/services/auth-interceptor.js"></script>
+    <script src="./shared/services/authentication.js"></script>
+
+    <script src="./login/controllers/login.js"></script>
+
+    <script src="./front/controllers/front.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:css ./css/app.css -->
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <!-- endbuild -->
+</head>
+
+<body ng-app="app">
+    <header>    </header>
+
+    <div ng-view></div>
+    
+    <footer></footer>
+</body>
+
+</html>
